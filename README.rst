@@ -1,13 +1,13 @@
 message-splitter
 ================
 
-.. image:: https://img.shields.io/travis/elijas/msgsplitter
-   :target: https://travis-ci.org/elijas/msgsplitter
-.. image:: https://img.shields.io/pypi/v/msgsplitter
+.. image:: https://img.shields.io/travis/com/Elijas/msgsplitter.svg
+   :target: https://travis-ci.com/elijas/msgsplitter
+.. image:: https://img.shields.io/pypi/v/msgsplitter.svg
    :target: https://pypi.python.org/elijas/msgsplitter
-.. image:: https://img.shields.io/pypi/pyversions/msgsplitter
+.. image:: https://img.shields.io/pypi/pyversions/msgsplitter.svg
    :target: https://github.com/elijas/msgsplitter
-.. image:: https://img.shields.io/github/license/elijas/msgsplitter
+.. image:: https://img.shields.io/github/license/elijas/msgsplitter.svg
    :target: https://github.com/elijas/msgsplitter
 
 
