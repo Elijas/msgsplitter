@@ -7,6 +7,8 @@ message-splitter
    :target: https://pypi.org/project/msgsplitter/
 .. image:: https://img.shields.io/pypi/pyversions/msgsplitter.svg
    :target: https://pypi.org/project/msgsplitter/
+.. image:: https://img.shields.io/github/issues/Elijas/msgsplitter.svg
+   :target: https://github.com/Elijas/msgsplitter/issues
 .. image:: https://img.shields.io/github/license/elijas/msgsplitter.svg
    :target: https://github.com/Elijas/msgsplitter/blob/master/LICENSE
 
