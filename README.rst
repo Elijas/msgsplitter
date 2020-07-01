@@ -13,8 +13,6 @@ Splits long message to multiple messages in order to fit within an arbitrary mes
 Quick start
 -----------
 
-Code example:
-
 .. sourcecode:: python
 
    >>> import msgsplitter
@@ -22,7 +20,8 @@ Code example:
    >>> result
    ['Hello, this is a really (1/2)', 'long message. (2/2)']
 
-Run tests:
+Run tests
+-----------
 
 .. sourcecode:: bash
 
