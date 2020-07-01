@@ -4,11 +4,11 @@ message-splitter
 .. image:: https://img.shields.io/travis/com/Elijas/msgsplitter.svg
    :target: https://travis-ci.com/elijas/msgsplitter
 .. image:: https://img.shields.io/pypi/v/msgsplitter.svg
-   :target: https://pypi.python.org/elijas/msgsplitter
+   :target: https://pypi.org/project/msgsplitter/
 .. image:: https://img.shields.io/pypi/pyversions/msgsplitter.svg
-   :target: https://github.com/elijas/msgsplitter
+   :target: https://pypi.org/project/msgsplitter/
 .. image:: https://img.shields.io/github/license/elijas/msgsplitter.svg
-   :target: https://github.com/elijas/msgsplitter
+   :target: https://github.com/Elijas/msgsplitter/blob/master/LICENSE
 
 
 Splits long message to multiple messages in order to fit within an arbitrary message length limit (useful for SMS, Twitter, etc.).
