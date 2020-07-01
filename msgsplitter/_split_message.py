@@ -1,7 +1,7 @@
 from typing import List
 
-from exceptions import LengthLimitTooLowError
-from formatters.formatter_base import FormatterBase
+from msgsplitter.exceptions import LengthLimitTooLowError
+from msgsplitter.formatters.formatter_base import FormatterBase
 
 
 def split_message(message: str, formatter: FormatterBase) -> List[str]:

@@ -1,5 +1,5 @@
-from exceptions import LengthLimitTooLowError
-from formatters.formatter_base import FormatterBase, RecalculateGroups
+from msgsplitter.exceptions import LengthLimitTooLowError
+from msgsplitter.formatters.formatter_base import FormatterBase, RecalculateGroups
 
 
 class IndicatorFormatter(FormatterBase):
@@ -10,7 +10,7 @@ class IndicatorFormatter(FormatterBase):
         >>> IndicatorFormatter(6, 1)
         Traceback (most recent call last):
         ...
-        exceptions.LengthLimitTooLowError
+        msgsplitter.exceptions.LengthLimitTooLowError
         """
         super().__init__(length_limit)
         if total_count_digits and self._length_limit - len(f' (/)') - 2 * total_count_digits < 1:
@@ -24,11 +24,11 @@ class IndicatorFormatter(FormatterBase):
         >>> IndicatorFormatter(5).is_message_too_long(5, 2)
         Traceback (most recent call last):
         ...
-        exceptions.LengthLimitTooLowError
+        msgsplitter.exceptions.LengthLimitTooLowError
         >>> IndicatorFormatter(10).is_message_too_long(5, 2)
         Traceback (most recent call last):
         ...
-        formatters.formatter_base.RecalculateGroups
+        msgsplitter.formatters.formatter_base.RecalculateGroups
         >>> IndicatorFormatter(10, 1).is_message_too_long(5, 2)
         True
         >>> IndicatorFormatter(11, 1).is_message_too_long(5, 2)

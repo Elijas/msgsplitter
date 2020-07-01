@@ -1,14 +1,30 @@
 message-splitter
 ================
 
-
 .. image:: https://img.shields.io/travis/elijas/msgsplitter
    :target: https://travis-ci.org/elijas/msgsplitter
+.. image:: https://img.shields.io/pypi/v/msgsplitter
+   :target: https://pypi.python.org/elijas/msgsplitter
+.. image:: https://img.shields.io/pypi/pyversions/msgsplitter
+   :target: https://github.com/elijas/msgsplitter
 .. image:: https://img.shields.io/github/license/elijas/msgsplitter
    :target: https://github.com/elijas/msgsplitter
 
 
 Splits long message to multiple messages in order to fit within an arbitrary message length limit (useful for SMS, Twitter, etc.).
+
+
+Installation
+------------
+.. sourcecode:: bash
+
+   ~ $ pip install msgsplitter
+
+or you can install local version
+
+.. sourcecode:: bash
+
+   ~ $ pip install -e .
 
 Quick start
 -----------
@@ -25,4 +41,4 @@ Run tests
 
 .. sourcecode:: bash
 
-   $ pytest --doctest-modules
+   $ pytest

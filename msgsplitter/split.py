@@ -1,8 +1,8 @@
 from typing import Callable
 
-from _split_message import split_message
-from formatters.formatter_base import FormatterBase, RecalculateGroups
-from formatters.indicator_formatter import IndicatorFormatter
+from msgsplitter._split_message import split_message
+from msgsplitter.formatters.formatter_base import FormatterBase, RecalculateGroups
+from msgsplitter.formatters.indicator_formatter import IndicatorFormatter
 
 
 def _get_split_messages(message, formatter):
@@ -21,4 +21,4 @@ def split(message: str, length_limit: int,
 
 
 if __name__ == '__main__':
-    print(split('Hello, this is a really long message.', 30))
+    print(split('Hello, this is a really long message.', length_limit=30))
