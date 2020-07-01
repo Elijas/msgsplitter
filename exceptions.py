@@ -1,0 +1,2 @@
+class LengthLimitTooLowError(ValueError):
+    pass
