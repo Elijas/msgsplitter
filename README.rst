@@ -22,7 +22,7 @@ Installation
 
    ~ $ pip install msgsplitter
 
-or you can install local version
+or you can install a local development version:
 
 .. sourcecode:: bash
 
