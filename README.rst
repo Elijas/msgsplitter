@@ -43,4 +43,4 @@ Run tests
 
 .. sourcecode:: bash
 
-   $ pytest
+   ~ $ pytest
