@@ -1,6 +1,8 @@
 message-splitter
 ================
 
+.. role:: python(code)
+   :language: python
 .. image:: https://img.shields.io/travis/com/Elijas/msgsplitter.svg
    :target: https://travis-ci.com/elijas/msgsplitter
 .. image:: https://img.shields.io/pypi/v/msgsplitter.svg
@@ -13,8 +15,9 @@ message-splitter
    :target: https://github.com/Elijas/msgsplitter/blob/master/LICENSE
 
 
-Splits long message to multiple messages in order to fit within an arbitrary message length limit (useful for SMS, Twitter, etc.).
+Splits a long piece of text (messages) to multiple text strings (messages) in order to fit within an arbitrary message length limit (useful for SMS, Twitter, etc.).
 
+Whitespace is used as the breaking point for splitting messages. All whitespace in the text is replaced with a single space.
 
 Installation
 ------------
@@ -22,7 +25,7 @@ Installation
 
    ~ $ pip install msgsplitter
 
-or you can install a local development version:
+or you can install a local development version after cloning the project:
 
 .. sourcecode:: bash
 
@@ -30,7 +33,6 @@ or you can install a local development version:
 
 Quick start
 -----------
-
 .. sourcecode:: python
 
    >>> import msgsplitter
@@ -40,6 +42,17 @@ Quick start
    >> result = msgsplitter.split('Hello, this is a really long message.', length_limit=30, append_indicator=False)
    >> result
    ['Hello, this is a really long', 'message.']
+
+Formatting extensibility
+-----------
+You can create custom formatting classes. Your class will define, how many characters must be reserved in each message for adding the formatting characters after the content split into chunks is made. You can take a look at the two example classes for inspiration: :python:`FormatterBase`, which is identical to just using the :python:`split(...)` with the argument :python:`append_indicator=False`, and the other class :python:`IndicatorFormatter`, which is identical to just using :python:`split(...)` with the argument :python:`append_indicator=True`.
+
+Custom class is passed through the :python:`formatter_cls` argument and overrides the :python:`append_indicator` setting:
+
+.. sourcecode:: python
+
+   msgsplitter.split('some text', 10, formatter_cls=IndicatorFormatter)
+
 
 Run tests
 -----------
