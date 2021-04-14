@@ -9,6 +9,9 @@ class FormatterBase:
         return message_length > self._length_limit
 
     def format(self, split_messages):
+        """
+        Add the extra formatting characters
+        """
         for message in split_messages:
             assert len(message) <= self._length_limit
         return split_messages
