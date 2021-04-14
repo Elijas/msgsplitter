@@ -5,7 +5,7 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
     name='msgsplitter',
-    version='1.0.1',
+    version='1.1.0',
     author="Elijas Dapšauskas",
     author_email="master.elijas@gmail.com",
     description="Split messages (strings) to fit an arbitrary character limit",

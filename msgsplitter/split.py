@@ -14,7 +14,16 @@ def _get_split_messages(message, formatter):
 
 
 def split(message: str, length_limit: int,
-          formatter_cls: Callable[[int], FormatterBase] = IndicatorFormatter):
+          formatter_cls: Callable[[int], FormatterBase] = None, append_indicator: bool = True):
+    """
+    Uses formatter_cls if exists, otherwise chooses formatter by append_indicator
+    """
+    if formatter_cls is None:
+        if append_indicator:
+            formatter_cls = IndicatorFormatter
+        else:
+            formatter_cls = FormatterBase
+
     formatter = formatter_cls(length_limit)
     split_messages, formatter = _get_split_messages(message, formatter)
     return formatter.format(split_messages)
@@ -22,3 +31,4 @@ def split(message: str, length_limit: int,
 
 if __name__ == '__main__':
     print(split('Hello, this is a really long message.', length_limit=30))
+    print(split('Hello, this is a really long message.', length_limit=30, append_indicator=False))
