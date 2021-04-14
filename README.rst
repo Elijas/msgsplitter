@@ -48,7 +48,7 @@ Formatting extensibility
 -----------
 You can create custom formatting classes. Your class will define, how many characters must be reserved in each message for adding the formatting characters after the content split into chunks is made. You can take a look at the two example classes for inspiration: :python:`FormatterBase`, which is identical to just using the :python:`split(...)` with the argument :python:`append_indicator=False`, and the other class :python:`IndicatorFormatter`, which is identical to just using :python:`split(...)` with the argument :python:`append_indicator=True`.
 
-Custom class is passed through the :python:`formatter_cls` argument and overrides the :python:`append_indicator` setting:
+Custom class is passed through the :python:`formatter_cls` argument and overrides the :python:`append_indicator` setting. Usage example:
 
 .. sourcecode:: python
 
