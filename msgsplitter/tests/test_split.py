@@ -9,7 +9,7 @@ from msgsplitter import *
 def test_given_one_word__when_split__then_returns_one_message(formatter):
     message = 'Hi'
 
-    messages = split(message, 2, formatter)
+    messages = split(message, length_limit=2, formatter_cls=formatter)
 
     assert messages == [message]
 
@@ -18,7 +18,7 @@ def test_given_one_word__when_split__then_returns_one_message(formatter):
 def test_given_multiple_words__when_split__then_returns_dynamically_sized_messages(formatter):
     message = 'A ' * 26
 
-    messages = split(message, 10, formatter)
+    messages = split(message, length_limit=10, formatter_cls=formatter)
 
     if formatter is FormatterBase:
         expected = ['A A A A A', 'A A A A A', 'A A A A A', 'A A A A A', 'A A A A A', 'A']
