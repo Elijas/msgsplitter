@@ -18,6 +18,7 @@ def split(message: str, length_limit: int,
     """
     Uses formatter_cls if exists, otherwise chooses formatter by append_indicator
     """
+    assert length_limit > 0, 'length_limit must be a positive integer'
     if formatter_cls is None:
         if append_indicator:
             formatter_cls = IndicatorFormatter
