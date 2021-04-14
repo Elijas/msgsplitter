@@ -2,7 +2,7 @@ import pytest
 
 from msgsplitter.formatters.formatter_base import FormatterBase
 from msgsplitter.formatters.indicator_formatter import IndicatorFormatter
-from msgsplitter.split import split
+from msgsplitter import *
 
 
 @pytest.mark.parametrize('formatter', [FormatterBase, IndicatorFormatter])
