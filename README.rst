@@ -36,11 +36,10 @@ Quick start
 .. sourcecode:: python
 
    >>> import msgsplitter
-   >>> result = msgsplitter.split('Hello, this is a really long message.', length_limit=30)
-   >>> result
+   >>> msgsplitter.split('Hello, this is a really long message.', length_limit=30)
    ['Hello, this is a really (1/2)', 'long message. (2/2)']
-   >> result = msgsplitter.split('Hello, this is a really long message.', length_limit=30, append_indicator=False)
-   >> result
+   
+   >>> msgsplitter.split('Hello, this is a really long message.', length_limit=30, append_indicator=False)
    ['Hello, this is a really long', 'message.']
 
 Formatting extensibility
