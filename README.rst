@@ -37,6 +37,9 @@ Quick start
    >>> result = msgsplitter.split("Hello, this is a really long message.", length_limit=30)
    >>> result
    ['Hello, this is a really (1/2)', 'long message. (2/2)']
+   >> result = print(split('Hello, this is a really long message.', length_limit=30, append_indicator=False))
+   >> result
+   ['Hello, this is a really long', 'message.']
 
 Run tests
 -----------
