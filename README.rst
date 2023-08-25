@@ -1,4 +1,4 @@
-message-splitter
+msgsplitter
 ================
 
 .. role:: python(code)
