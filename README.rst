@@ -5,10 +5,6 @@ message-splitter
    :language: python
 .. image:: https://img.shields.io/travis/com/Elijas/msgsplitter.svg
    :target: https://travis-ci.com/elijas/msgsplitter
-.. image:: https://img.shields.io/pypi/v/msgsplitter.svg
-   :target: https://pypi.org/project/msgsplitter/
-.. image:: https://img.shields.io/pypi/pyversions/msgsplitter.svg
-   :target: https://pypi.org/project/msgsplitter/
 .. image:: https://img.shields.io/github/issues/Elijas/msgsplitter.svg
    :target: https://github.com/Elijas/msgsplitter/issues
 .. image:: https://img.shields.io/github/license/elijas/msgsplitter.svg
